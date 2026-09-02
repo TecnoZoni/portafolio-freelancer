@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agustín Minzoni · Sistemas para gimnasios</title>
+  <meta name="description" content="Soy Agustín, desarrollador en Timbúes. Te armo un sistema a medida para tu gimnasio —socios, cuotas y cobros— y te lo explico en criollo, sin términos raros." />
+
+  <meta property="og:title" content="Agustín Minzoni · Sistemas para gimnasios" />
+  <meta property="og:description" content="Tu gimnasio ordenado, sin pelearte con la tecnología. Del otro lado del WhatsApp estoy yo, no un soporte." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:image" content="https://agustinminzoni.com/img/mi_foto.jpg" />
+
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=6" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="#inicio" class="nav__logo">Agustín Minzoni<span class="nav__logo-dot">.</span></a>
+      <nav class="nav__links" id="navLinks" aria-label="Navegación">
+        <a href="#problema">El día a día</a>
+        <a href="#solucion">Lo que hago</a>
+        <a href="#proceso">Cómo trabajo</a>
+        <a href="#caso">Caso real</a>
+        <a href="#faq">Preguntas</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="tbtn" id="themeToggle" aria-label="Cambiar entre claro y oscuro">
+          <svg class="tbtn__sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-13a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V5a1 1 0 0 1 1-1zm0 15a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1zM4 12a1 1 0 0 1-1 1H2a1 1 0 1 1 0-2h1a1 1 0 0 1 1 1zm18 0a1 1 0 0 1-1 1h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 1 1zM5.6 5.6a1 1 0 0 1 1.4 0l.7.7A1 1 0 0 1 6.3 7.7l-.7-.7a1 1 0 0 1 0-1.4zm11 11a1 1 0 0 1 1.4 0l.7.7a1 1 0 0 1-1.4 1.4l-.7-.7a1 1 0 0 1 0-1.4zm1.4-11a1 1 0 0 1 0 1.4l-.7.7a1 1 0 1 1-1.4-1.4l.7-.7a1 1 0 0 1 1.4 0zm-11 11a1 1 0 0 1 0 1.4l-.7.7a1 1 0 0 1-1.4-1.4l.7-.7a1 1 0 0 1 1.4 0z"/></svg>
+          <svg class="tbtn__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <a href="https://wa.me/5493476394659?text=Hola%20Agust%C3%ADn,%20tengo%20un%20gimnasio%20y%20quiero%20ordenarlo" class="wa wa--sm" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.8-.9-2.1-1s-.48-.15-.68.15-.78.98-.96 1.18-.35.22-.65.07a8.5 8.5 0 0 1-2.5-1.54 9.4 9.4 0 0 1-1.73-2.16c-.18-.3 0-.47.13-.62s.3-.35.44-.53a2 2 0 0 0 .3-.5.55.55 0 0 0 0-.52c-.07-.15-.67-1.62-.92-2.22s-.49-.5-.67-.5h-.58a1.1 1.1 0 0 0-.8.37 3.35 3.35 0 0 0-1.04 2.48 5.8 5.8 0 0 0 1.22 3.09 13.3 13.3 0 0 0 5.1 4.5c.71.3 1.27.49 1.7.63a4.1 4.1 0 0 0 1.88.12 3.07 3.07 0 0 0 2-1.42 2.5 2.5 0 0 0 .17-1.42c-.07-.12-.27-.2-.57-.35z"/></svg>
+          WhatsApp
+        </a>
+        <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="inicio">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Desarrollador de sistemas · Timbúes, Santa Fe</p>
+          <h1 class="hero__title">Tu gimnasio ordenado, sin pelearte con la&nbsp;tecnología.</h1>
+          <p class="hero__lead">
+            Soy Agustín. Te armo un sistema a medida para manejar <strong>socios, cuotas y cobros</strong>,
+            y te lo explico en criollo, sin términos raros. Del otro lado del WhatsApp estoy yo —no un soporte.
+          </p>
+          <div class="hero__cta">
+            <a href="https://wa.me/5493476394659?text=Hola%20Agust%C3%ADn,%20tengo%20un%20gimnasio%20y%20quiero%20ordenarlo" class="wa wa--lg" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.8-.9-2.1-1s-.48-.15-.68.15-.78.98-.96 1.18-.35.22-.65.07a8.5 8.5 0 0 1-2.5-1.54 9.4 9.4 0 0 1-1.73-2.16c-.18-.3 0-.47.13-.62s.3-.35.44-.53a2 2 0 0 0 .3-.5.55.55 0 0 0 0-.52c-.07-.15-.67-1.62-.92-2.22s-.49-.5-.67-.5h-.58a1.1 1.1 0 0 0-.8.37 3.35 3.35 0 0 0-1.04 2.48 5.8 5.8 0 0 0 1.22 3.09 13.3 13.3 0 0 0 5.1 4.5c.71.3 1.27.49 1.7.63a4.1 4.1 0 0 0 1.88.12 3.07 3.07 0 0 0 2-1.42 2.5 2.5 0 0 0 .17-1.42c-.07-.12-.27-.2-.57-.35z"/></svg>
+              Escribime por WhatsApp
+            </a>
+            <a href="#caso" class="link-arrow">Mirá un caso real →</a>
+          </div>
+          <p class="hero__proof">
+            <span class="tick">✓</span> Técnico Superior en Desarrollo de Software
+            &nbsp;·&nbsp; <span class="tick">✓</span> Un sistema ya en producción en un gimnasio real
+          </p>
+        </div>
+
+        <!-- Firma visual: la ficha del socio -->
+        <div class="hero__ficha" aria-hidden="true">
+          <article class="ficha ficha--back">
+            <header class="ficha__top"><span>Ficha de socio</span><span class="ficha__id">Nº 151</span></header>
+            <dl class="ficha__body">
+              <div><dt>Socio</dt><dd>Lucía Fernández</dd></div>
+              <div><dt>Plan</dt><dd>Full</dd></div>
+              <div><dt>Vence</dt><dd>28/09</dd></div>
+            </dl>
+            <div class="stamp stamp--ok">Al día</div>
+          </article>
+          <article class="ficha ficha--front">
+            <header class="ficha__top"><span>Ficha de socio</span><span class="ficha__id">Nº 184</span></header>
+            <dl class="ficha__body">
+              <div><dt>Socio</dt><dd>Martín Gómez</dd></div>
+              <div><dt>Plan</dt><dd>Musculación</dd></div>
+              <div><dt>Cuota</dt><dd>$18.000</dd></div>
+              <div><dt>Vence</dt><dd>03/09</dd></div>
+            </dl>
+            <div class="stamp stamp--due">Venció</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TIRA DE CONFIANZA ===================== -->
+    <div class="strip">
+      <div class="wrap strip__inner">
+        <span>De persona a persona</span>
+        <span>Precio claro antes de empezar</span>
+        <span>Soporte después de entregar</span>
+      </div>
+    </div>
+
+    <!-- ===================== PROBLEMA ===================== -->
+    <section class="section section--ruled" id="problema">
+      <div class="wrap narrow">
+        <p class="eyebrow">El día a día</p>
+        <h2 class="section__title">Sé cómo es. Lo viví con otros dueños.</h2>
+        <p class="section__intro">Cuando el gimnasio crece, la administración se te viene encima. Estas son las que más escucho:</p>
+        <ul class="pains">
+          <li>Tenés a los socios en un cuaderno o un Excel que ya no entendés ni vos.</li>
+          <li>No sabés bien quién debe, y esa plata se te escapa todos los meses.</li>
+          <li>Si no estás vos en el mostrador, nadie sabe cómo se maneja la cosa.</li>
+          <li>Pasás más tiempo peleándote con la planilla que con tu gente.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== SOLUCIÓN ===================== -->
+    <section class="section" id="solucion">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow">Lo que hago por vos</p>
+          <h2 class="section__title">Un sistema hecho para tu gimnasio. No un molde.</h2>
+          <p class="section__intro">Cada gimnasio se maneja distinto. Por eso no te vendo un producto cerrado: te armo lo que necesitás, y nada que no vayas a usar.</p>
+        </div>
+        <div class="records">
+          <div class="record"><span class="record__key">Socios</span><p>Cada socio con su ficha, su plan y su historial. Encontrás cualquier dato en segundos.</p></div>
+          <div class="record"><span class="record__key">Cuotas</span><p>El sistema te dice solo quién está al día y quién venció. Sin que saques cuentas a mano.</p></div>
+          <div class="record"><span class="record__key">Cobros</span><p>Registrás pagos al toque. Y si querés, sumamos cobro online con Mercado Pago.</p></div>
+          <div class="record"><span class="record__key">Reportes</span><p>Cuánto entró, cuántos socios activos, cuánto hay por recuperar. Números claros, no adivinanza.</p></div>
+          <div class="record"><span class="record__key">Acceso</span><p>Lo abrís desde la compu del mostrador o desde tu celular. Estés donde estés.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROCESO ===================== -->
+    <section class="section section--dark" id="proceso">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow eyebrow--on-dark">Cómo es trabajar conmigo</p>
+          <h2 class="section__title">Simple. Y sin que tengas que aprender nada raro.</h2>
+        </div>
+        <ol class="steps">
+          <li class="step"><span class="step__n">1</span><h3>Charlamos</h3><p>Me contás cómo llevás el gimnasio hoy. Por WhatsApp o un café. Sin compromiso.</p></li>
+          <li class="step"><span class="step__n">2</span><h3>Te propongo</h3><p>Te digo qué te conviene, cuánto sale y en cuánto lo tenés. Todo claro de entrada.</p></li>
+          <li class="step"><span class="step__n">3</span><h3>Lo armo y lo prendemos</h3><p>Construyo el sistema y te acompaño los primeros días para que le agarres la mano.</p></li>
+          <li class="step"><span class="step__n">4</span><h3>Quedo cerca</h3><p>¿Se rompe algo o querés sumar una función? Me escribís y lo resuelvo. No desaparezco.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== CASO REAL ===================== -->
+    <section class="section" id="caso">
+      <div class="wrap case">
+        <div class="case__intro">
+          <p class="eyebrow">Caso real</p>
+          <h2 class="section__title">Ibiza Gym: del cuaderno a&nbsp;lo suyo propio.</h2>
+          <p class="section__intro">El dueño llevaba los socios con el sistema anterior y papel, y se le estaba complicando: perdía el rastro de quién estaba al día y quién no.</p>
+          <p class="case__body"><strong>Qué hice:</strong> le desarrollé un sistema propio, enfocado en lo que de verdad usaba —registro de socios y control de pagos de cuotas—, ordenado y fácil de usar.</p>
+          <p class="case__body"><strong>El resultado:</strong> hoy está usándose todos los días. El control de socios y cuotas dejó de depender de papeles sueltos.</p>
+          <a class="videolink" href="https://www.instagram.com/reel/DULkSljErVA/" target="_blank" rel="noopener">
+            <span class="videolink__play" aria-hidden="true"></span>
+            <span class="videolink__txt"><strong>Mirá el sistema funcionando</strong><small>Video en Instagram · caso Ibiza Gym</small></span>
+          </a>
+          <p class="case__note">Te cuento solo lo que funciona de verdad. Funciones como el cobro online las ofrezco a partir de experiencia real integrándolas en otro proyecto, no las invento acá.</p>
+        </div>
+        <aside class="case__mark">
+          <div class="brandwrap">
+            <a class="brandcard" href="https://www.instagram.com/ibiza_gym25/" target="_blank" rel="noopener">
+              <img src="img/logo_Ibiza_gym.jpg" alt="Logo de Ibiza Gym" width="240" height="240" loading="lazy" />
+              <span class="brandcard__meta">
+                <span class="brandcard__name">Ibiza Gym</span>
+                <span class="brandcard__ig">@ibiza_gym25</span>
+              </span>
+            </a>
+            <span class="stamp stamp--prod" aria-hidden="true">En producción</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE MÍ ===================== -->
+    <section class="section section--about" id="sobre-mi">
+      <div class="wrap about">
+        <div class="about__photo">
+          <img class="portrait" src="img/mi_foto.jpg" alt="Agustín Minzoni en el gimnasio" width="912" height="1148" loading="lazy" />
+        </div>
+        <div class="about__copy">
+          <p class="eyebrow">Quién te atiende</p>
+          <h2 class="section__title">Soy Agustín. Le pongo la misma constancia que a correr a las seis.</h2>
+          <p>Soy Técnico Superior en Desarrollo de Software y hace años que hago sistemas de gestión para negocios reales de la zona. Aprendí solo, y hoy también enseño —así que explicar las cosas claras es lo que mejor me sale.</p>
+          <p>No te voy a marear con palabras técnicas. Mi trabajo es entender tu problema y resolverlo con algo simple que puedas usar todos los días. Lo termino, lo dejo andando, y me quedo cerca. Sin desaparecer.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section section--ruled" id="faq">
+      <div class="wrap narrow">
+        <p class="eyebrow">Lo que seguro te estás preguntando</p>
+        <h2 class="section__title">Sin letra chica.</h2>
+        <div class="faq">
+          <details class="qa"><summary>¿Necesito saber de computación?</summary><p>Para nada. Esa es justamente mi parte. Vos usás algo simple; lo complicado queda de mi lado.</p></details>
+          <details class="qa"><summary>¿Cuánto sale?</summary><p>Depende de lo que necesites. Por eso primero charlamos: te paso un precio claro antes de empezar, sin sorpresas después.</p></details>
+          <details class="qa"><summary>¿Y si algo falla?</summary><p>Me escribís y lo arreglo. Te doy soporte después de entregar; no te dejo solo con el sistema.</p></details>
+          <details class="qa"><summary>¿Los datos de mis socios quedan seguros?</summary><p>Sí. El sistema es tuyo y los datos son tuyos. Te explico dónde están y cómo se respaldan, en palabras claras.</p></details>
+          <details class="qa"><summary>¿Tenés que ser de Timbúes?</summary><p>No. Soy de acá, pero trabajo con gimnasios de cualquier lado. Todo se puede coordinar a distancia.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA FINAL ===================== -->
+    <section class="final" id="contacto">
+      <div class="wrap final__inner">
+        <h2 class="final__title">¿Arrancamos? Contame de tu gimnasio.</h2>
+        <p class="final__sub">Escribime y vemos juntos qué te conviene. Aunque no me contrates, te oriento.</p>
+        <a href="https://wa.me/5493476394659?text=Hola%20Agust%C3%ADn,%20tengo%20un%20gimnasio%20y%20quiero%20ordenarlo" class="wa wa--lg" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.8-.9-2.1-1s-.48-.15-.68.15-.78.98-.96 1.18-.35.22-.65.07a8.5 8.5 0 0 1-2.5-1.54 9.4 9.4 0 0 1-1.73-2.16c-.18-.3 0-.47.13-.62s.3-.35.44-.53a2 2 0 0 0 .3-.5.55.55 0 0 0 0-.52c-.07-.15-.67-1.62-.92-2.22s-.49-.5-.67-.5h-.58a1.1 1.1 0 0 0-.8.37 3.35 3.35 0 0 0-1.04 2.48 5.8 5.8 0 0 0 1.22 3.09 13.3 13.3 0 0 0 5.1 4.5c.71.3 1.27.49 1.7.63a4.1 4.1 0 0 0 1.88.12 3.07 3.07 0 0 0 2-1.42 2.5 2.5 0 0 0 .17-1.42c-.07-.12-.27-.2-.57-.35z"/></svg>
+          Escribime por WhatsApp
+        </a>
+        <a href="mailto:agustinminzoni@gmail.com" class="final__mail">o mandame un mail</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__inner">
+      <span class="foot__name">Agustín Minzoni</span>
+      <nav class="foot__links" aria-label="Contacto">
+        <a href="https://wa.me/5493476394659" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:agustinminzoni@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/agustinminzoni/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/TecnoZoni" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+      <span class="foot__copy">© <span id="year"></span> · Sistemas para gimnasios, hechos a mano en Timbúes.</span>
+    </div>
+  </footer>
+
+  <!-- CTA fija en móvil -->
+  <a href="https://wa.me/5493476394659?text=Hola%20Agust%C3%ADn,%20tengo%20un%20gimnasio%20y%20quiero%20ordenarlo" class="sticky-wa" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.8-.9-2.1-1s-.48-.15-.68.15-.78.98-.96 1.18-.35.22-.65.07a8.5 8.5 0 0 1-2.5-1.54 9.4 9.4 0 0 1-1.73-2.16c-.18-.3 0-.47.13-.62s.3-.35.44-.53a2 2 0 0 0 .3-.5.55.55 0 0 0 0-.52c-.07-.15-.67-1.62-.92-2.22s-.49-.5-.67-.5h-.58a1.1 1.1 0 0 0-.8.37 3.35 3.35 0 0 0-1.04 2.48 5.8 5.8 0 0 0 1.22 3.09 13.3 13.3 0 0 0 5.1 4.5c.71.3 1.27.49 1.7.63a4.1 4.1 0 0 0 1.88.12 3.07 3.07 0 0 0 2-1.42 2.5 2.5 0 0 0 .17-1.42c-.07-.12-.27-.2-.57-.35z"/></svg>
+    Escribime por WhatsApp
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
